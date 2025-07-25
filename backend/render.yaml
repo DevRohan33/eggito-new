@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: eggito-backend
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: RAZORPAY_SECRET
+        value: eggito@330
+    region: singapore
