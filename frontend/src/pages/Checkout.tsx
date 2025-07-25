@@ -26,7 +26,7 @@ const Checkout = () => {
   const [isProcessing, setIsProcessing] = useState(false);
 
   const loadRazorpay = async () => {
-  const res = await fetch("http://localhost:3001/create-order", {
+  const res = await fetch("https://eggito-new.onrender.com/create-order", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

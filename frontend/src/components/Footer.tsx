@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className="bg-secondary mt-16 font-poppins">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          <div className="space-y-4">
+          <div className="space-y-4 md:col-span-2">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">E</span>
@@ -60,6 +60,22 @@ const Footer = () => {
                 <span>WhatsApp Chat</span>
               </a>
             </div>
+          </div>
+
+          {/* Policy Links */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground">Policies</h3>
+            <nav className="flex flex-col space-y-2">
+              <Link to="/shipping-policy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                Shipping Policy
+              </Link>
+              <Link to="/terms-and-conditions" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                Terms and Conditions
+              </Link>
+              <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                Privacy Policy
+              </Link>
+            </nav>
           </div>
         </div>
 
